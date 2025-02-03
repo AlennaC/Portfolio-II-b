@@ -1,0 +1,107 @@
+body {
+    margin: 0px;
+    text-align: center;
+    background-color: rgb(246, 241, 236);
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', Geneva, Verdana, sans-serif;
+}
+
+/*Header Style*/
+.header {
+    background-color: rgb(104, 184, 181);
+    position: relative;
+    margin: 0px;
+    padding: 20px;
+    top: -15px;
+
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.header h1 {
+    font-size: 50px;
+    margin: 0px;
+}
+
+.header p {
+    margin-bottom: 0px;
+    text-align: left;
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+/*Footer Style*/
+.footer {
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    bottom: 0px;
+    
+    font-size: 12px;
+    
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+/*Button Style*/
+button[class$="color-change-button"] {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 20%;
+}
+
+button:active {
+    background-color: rgb(191, 191, 191);
+}
+
+/*Card Style*/
+.card-row {
+    margin: 0px;
+}
+
+div[class^="card-group_"] {
+    width: 250px;
+    margin: 40px;
+    display: inline-block;
+    justify-content: center;
+
+    button {
+        margin-bottom: 30px;
+    }
+}
+
+div[class^="card_"] {
+    box-shadow: 4px 8px 8px rgba(43, 57, 70, 0.7);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    color: rgb(46, 46, 46);
+}
+
+.card-group_1, .card-group_3 {
+    position: relative;
+    top: 50px;
+}
+
+div[class^="card_"] .color-space {
+    background-color: rgb(255, 255, 255);
+    height: 250px;
+    margin: 0px;
+
+    border: 10px solid rgb(221, 207, 196);
+}
+
+div[class^="card_"] .color-tag {
+    background-color: rgb(221, 207, 196);
+    height: 50px;
+    margin: 0px;
+    align-content: center;
+}
+
+p.name-pool {
+    color: red;
+}
