@@ -107,9 +107,22 @@ p.name-pool {
 }
 
 /*Calculator Style*/
+.calculator {
+    display: inline-grid;
+    background-color: rgb(77, 94, 109);
+    grid-template-rows: auto auto auto;
+    width: 195px;
+    padding: 12px;
+}
+
+#screen {
+    background-color: aliceblue;
+    padding: 15px;
+}
+
 .num-buttons, .op-buttons {
     display: inline-grid;
-    background-color: rgb(198, 229, 229);
+    background-color: rgb(198, 218, 229);
     width: 175px;
     gap: 10px;
     padding: 10px;
@@ -128,7 +141,7 @@ p.name-pool {
 }
 
 .nums, .ops {
-    background-color: rgb(168, 204, 204);
+    background-color: rgb(168, 194, 204);
 }
 
 .num-buttons :nth-child(10) {
