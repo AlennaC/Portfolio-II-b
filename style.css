@@ -115,7 +115,7 @@ p.name-pool {
     padding: 12px;
 }
 
-#screen {
+#calc-screen {
     background-color: aliceblue;
     padding: 15px;
 }
@@ -150,4 +150,9 @@ p.name-pool {
 
 .op-buttons :nth-child(5) {
     grid-column-start: span 2;
+}
+
+.addition-machine img {
+    height: 50px;
+    width: 50px;
 }

@@ -4,6 +4,8 @@ var operation = null;
 var total = 0;
 var numOfItems = 0;
 
+var loopNum = 0;
+
 function calculateNumbers() {
     if (num2 == '') {
         num2 = '0';
@@ -38,7 +40,7 @@ function calculateNumbers() {
 }
 
 function displayEquation() {
-    document.getElementById("screen").textContent = equation;
+    document.getElementById("calc-screen").textContent = equation;
 }
 
 function appendNum() {
@@ -94,4 +96,20 @@ function chooseOperation() {
     }
     console.log(numOfItems);
 
+}
+
+function addLoopNum() {
+    var newNum = document.getElementById("addition-input").value;
+    console.log(newNum);
+
+    if (newNum != -1) {
+        loopNum += newNum*1;
+    } else {
+        document.getElementById("addition-input").value = "";
+    }
+
+    document.getElementById("add-screen").textContent = loopNum;
+    if (newNum == -1) {
+        loopNum = 0;
+    }
 }
