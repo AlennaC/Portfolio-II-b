@@ -41,3 +41,25 @@ function hideHello() {
     document.getElementById("hello-text-space").children[0].textContent = "";
     document.getElementById("hello-text-space").children[1].textContent = "";
 }
+
+/* Number Guess */
+
+function getAnswer() {
+    // update with randomizer
+    return 192;
+}
+
+function checkGuess() {
+    var guess = document.getElementById("guess-input").value;
+    var answer = getAnswer()
+
+    // Add hints? (ie way higher)
+    if (guess < answer) {
+        document.getElementById("guess-feedback").textContent = "Higher!"
+    } else if (guess > answer) {
+        document.getElementById("guess-feedback").textContent = "Lower!"
+    } else {
+        document.getElementById("guess-feedback").textContent = "Correct!"
+        document.getElementById("answer-spot").textContent = answer;
+    }
+}
